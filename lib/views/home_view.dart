@@ -46,7 +46,14 @@ class HomeView extends StatelessWidget {
               weather: state.weatherModel,
             );
           } else {
-            return const Text('opps there was an error');
+            return const Center(
+                child: Text(
+              'opps there was an error',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30.0,
+              ),
+            ));
           }
         },
       ),
